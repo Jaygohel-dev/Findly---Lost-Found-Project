@@ -1,3 +1,4 @@
+<<<<<<< HEAD
     # Findly — Lost & Found Platform
 
 A production-ready full-stack MERN application built as an internship project. Findly helps people recover lost items by connecting owners with finders through smart matching, secure messaging, and a community-driven platform.
@@ -307,3 +308,6 @@ VITE_APP_NAME=Findly
 ---
 
 **Built as a production-ready MERN internship project demonstrating full-stack development best practices.**
+=======
+# Findly---Lost-Found-Project
+>>>>>>> a612b8cfeaa8a29e13814df83316b8fea13613e9
