@@ -196,69 +196,6 @@ npm run dev
 
 Visit `http://localhost:5173`
 
-**Demo Credentials (after running seed):**
-
-| Role  | Email                | Password   |
-|-------|----------------------|------------|
-| Admin | admin@findly.com     | Admin@123  |
-| User  | rahul@demo.com       | User@1234  |
-| User  | priya@demo.com       | User@1234  |
-
----
-
-## API Reference
-
-### Auth `POST /api/auth/register`
-```json
-{ "name": "Rahul Sharma", "email": "rahul@example.com", "password": "Pass@123" }
-```
-
-### Auth `POST /api/auth/login`
-```json
-{ "email": "rahul@example.com", "password": "Pass@123" }
-```
-
-### Standard Success Response
-```json
-{ "success": true, "message": "...", "data": { ... } }
-```
-
-### Standard Error Response
-```json
-{ "success": false, "message": "...", "errors": [...] }
-```
-
-### All Endpoints
-
-| Method | Endpoint                          | Auth  | Description              |
-|--------|-----------------------------------|-------|--------------------------|
-| POST   | /api/auth/register                | No    | Register user            |
-| POST   | /api/auth/login                   | No    | Login                    |
-| GET    | /api/auth/me                      | Yes   | Get current user         |
-| POST   | /api/auth/logout                  | Yes   | Logout                   |
-| GET    | /api/users/profile                | Yes   | Get profile              |
-| PUT    | /api/users/profile                | Yes   | Update profile           |
-| PUT    | /api/users/change-password        | Yes   | Change password          |
-| POST   | /api/users/rate                   | Yes   | Rate a user              |
-| GET    | /api/items                        | No    | Browse items (+ filters) |
-| GET    | /api/items/stats                  | No    | Platform statistics      |
-| GET    | /api/items/my                     | Yes   | My items                 |
-| GET    | /api/items/:id                    | No    | Item detail              |
-| POST   | /api/items                        | Yes   | Create item (multipart)  |
-| PUT    | /api/items/:id                    | Yes   | Update item              |
-| DELETE | /api/items/:id                    | Yes   | Delete item              |
-| POST   | /api/items/:id/recover            | Yes   | Mark recovered           |
-| POST   | /api/items/:id/match              | Yes   | Match two items          |
-| GET    | /api/messages/inbox               | Yes   | Get inbox                |
-| GET    | /api/messages/:itemId             | Yes   | Item conversation        |
-| POST   | /api/messages                     | Yes   | Send message             |
-| GET    | /api/admin/stats                  | Admin | Platform stats           |
-| GET    | /api/admin/users                  | Admin | All users                |
-| PUT    | /api/admin/users/:id/toggle       | Admin | Suspend / activate       |
-| GET    | /api/admin/items                  | Admin | All items                |
-| DELETE | /api/admin/items/:id              | Admin | Delete item              |
-
----
 
 ## Environment Variables
 
