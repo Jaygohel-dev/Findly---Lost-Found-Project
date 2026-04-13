@@ -247,4 +247,3 @@ VITE_APP_NAME=Findly
 **Built as a production-ready MERN internship project demonstrating full-stack development best practices.**
 =======
 # Findly---Lost-Found-Project
->>>>>>> a612b8cfeaa8a29e13814df83316b8fea13613e9
